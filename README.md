@@ -1,5 +1,5 @@
 
-![Image](https://train.usaco.org/usaco/cowhead2.gif)
+![Image](https://cdn-forums.animeuknews.net/data/avatars/o/0/275.jpg?1569057740)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/MaxXieGuaGuaGua/MaxXieGuaGuaGua.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
