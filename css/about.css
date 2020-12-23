@@ -1,0 +1,304 @@
+/* banner */
+
+.banner {
+    height: 400px;
+    width: 868px;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px auto;
+    line-height: 30px;
+    text-shadow: #fff 1px 1px 1px;
+    background: url(https://cdn.jsdelivr.net/gh/coquerorrobotics/coquerorrobotics.github.io/VEXWeb/images/bg1.jpg) center no-repeat;
+    /* background-size: ; */
+    background-position: 0px -120px;
+    background-size: 100%;
+    padding: 0;
+}
+
+
+/*文字动画效果*/
+
+
+/*纪念日*/
+
+.memorial_day {
+    overflow: hidden;
+    position: relative;
+    padding: 60px;
+}
+
+.time_axis {
+    background: sandybrown;
+    height: 6px;
+    width: 100%;
+    animation: time_a 5s;
+    -moz-animation: time_a 5s;
+    /* Firefox */
+    -webkit-animation: time_a 5s;
+    /* Safari and Chrome */
+    -o-animation: time_a 5s;
+    /* Opera */
+}
+
+
+/*时间轴动画效果*/
+
+@keyframes time_a {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 220px;
+    }
+    50% {
+        width: 500px;
+    }
+    75% {
+        width: 630px;
+    }
+    100% {
+        width: 1000px;
+    }
+}
+
+@-moz-keyframes time_a
+/* Firefox */
+
+{
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 220px;
+    }
+    50% {
+        width: 500px;
+    }
+    75% {
+        width: 630px;
+    }
+    100% {
+        width: 1000px;
+    }
+}
+
+@-webkit-keyframes time_a
+/* Safari and Chrome */
+
+{
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 220px;
+    }
+    50% {
+        width: 500px;
+    }
+    75% {
+        width: 630px;
+    }
+    100% {
+        width: 1000px;
+    }
+}
+
+@-o-keyframes time_a
+/* Opera */
+
+{
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 220px;
+    }
+    50% {
+        width: 500px;
+    }
+    75% {
+        width: 630px;
+    }
+    100% {
+        width: 1000px;
+    }
+}
+
+.dateview {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    display: block;
+    width: 88px;
+    background: url(https://cdn.jsdelivr.net/gh/coquerorrobotics/coquerorrobotics.github.io/VEXWeb/images/dtime.png) no-repeat;
+    color: #FFF;
+    height: 46px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.memorial_day ul {
+    list-style: none;
+}
+
+.memorial_day ul li a {
+    margin-top: 30px;
+    display: block;
+    font-size: 16px;
+    color: rgb(217, 54, 46);
+}
+
+.memorial_day ul li a:hover,
+.memorial_day ul li a:focus {
+    text-decoration: none;
+}
+
+.memorial_day ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgb(138, 138, 141);
+    border: 3px solid #fff;
+}
+
+.memorial_day ul li:hover::before {
+    background: rgb(217, 54, 46);
+    border: 3px solid #e9f6fb;
+}
+
+.memorial_day ul li.n1 {
+    position: absolute;
+    top: 54px;
+    left: 65px;
+}
+
+.memorial_day ul li.n2 {
+    position: absolute;
+    top: 54px;
+    left: 270px;
+}
+
+.memorial_day ul li.n3 {
+    position: absolute;
+    top: 54px;
+    left: 560px;
+}
+
+.memorial_day ul li.n4 {
+    position: absolute;
+    top: 54px;
+    left: 675px;
+}
+
+.memorial_day ul li.n5 {
+    position: absolute;
+    top: 54px;
+    left: 950px;
+}
+
+.about {
+    width: 90%;
+    margin: 10px auto 30px;
+    overflow: hidden;
+    line-height: 22px;
+}
+
+
+/* 
+.thumbnail {
+    height: 620px;
+} */
+
+.thumbnail img {
+    width: 300px;
+    height: 520px;
+}
+
+.about h2 {
+    color: #B0E0E6;
+    font-size: 22px;
+    margin-bottom: 20px;
+    background: rgb(138, 138, 141);
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+    border-radius: 0 30px 30px 0;
+    box-shadow: #21566f 1px 1px 1px;
+    border-left: #dae1e4 6px solid;
+}
+
+.about p {
+    margin-bottom: 20px;
+    text-indent: 28px;
+    font-size: 18px;
+    color: #2A7497;
+}
+
+.test .photowall {
+    margin-left: 28px;
+}
+
+@media(max-width: 1200px) {
+    .memorial_day {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .test {
+        margin: 0;
+    }
+    .test .photowall {
+        margin: 0;
+        width: 100%;
+    }
+    .photowall .wall_a li h2 {
+        line-height: 12px;
+        font-size: 8px;
+    }
+    .photowall .wall_a li {
+        height: 130px;
+        padding-top: 0;
+    }
+    .photowall ul {
+        margin-left: -10px;
+    }
+    .thumbnail {
+        width: 292px;
+        height: 205px;
+        /* overflow: auto; */
+    }
+    .thumbnail img {
+        width: 112.5px;
+        height: 195px;
+        float: left;
+    }
+    .thumbnail .caption {
+        width: 168px;
+        float: right;
+        padding-right: 0;
+    }
+    .thumbnail .caption p {
+        font-size: 18px;
+        height: 186px;
+        overflow: auto;
+    }
+    .about {
+        margin: 0 auto;
+    }
+}
+
+.clearfix:after {
+    content: ".";
+    /*尽量不要为空，一般写一个点*/
+    height: 0;
+    /*盒子高度为0，看不见*/
+    display: block;
+    /*插入伪元素是行内元素，要转化为块级元素*/
+    visibility: hidden;
+    /*content有内容，将元素隐藏*/
+    clear: both;
+}
